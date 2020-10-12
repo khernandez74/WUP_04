@@ -64,10 +64,10 @@ par(mar = c(3, 14, 2, 2))
 plot(TukeyHSD(model1),las=2)
 ```
 
+P value is 0.000236
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
-
-All groups are signaficantly different because they exceed 0
+We can determine that the P value is greater amount than 0.05 which means that the alternate hypothesis is weak so you do not reject the null. 
