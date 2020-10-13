@@ -41,6 +41,15 @@ $H_a$ There is a significant difference in average score on the WORDSUM test bet
 boxplot(WORDSUM~DEGREE,data=GSSdata)
 ```
 
+```{r}
+basicCN <- ggplot(GSSdata,aes(x=WORDSUM,y=DEGREE,horizontal=TRUE))
+```
+## Now add in boxplot
+
+```{r}
+basicCN + geom_boxplot()
+```
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
@@ -70,4 +79,4 @@ P value is 0.000236
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
-We can determine that the P value is less than (<) amount 0.05 which means that the alternate hypothesis is weak so we reject the null. The TukeyHSD test shows the difference in bachelor, graduate, high school and junior college is definite. We can see that there is a significant difference in average score test between at least two levels of degree. LT high school graduate and high school graduate are significantly different.
+the P value is 0.000236 which means that two out of 10000 times we will get a result that the null hypothesis is true. We dont believe the null hypothesis is true since it happens so infrequently. So we will reject the null hypothesis. To further explain what we are saying the result of a TukeyHSD test shows that the wordsum test between LT high school and graduate are different, also high school and graduate are different. There is no other significant differences than those two stated. 
